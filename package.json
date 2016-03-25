@@ -1,0 +1,22 @@
+{
+  "name": "lolify",
+  "version": "1.0.8",
+  "description": "super useful command line utility",
+  "main": "index.js",
+  "bin": {
+    "lolify": "cli.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@rickycodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickycodes/lolify/issues"
+  },
+  "homepage": "https://github.com/rickycodes/lolify",
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
+}
