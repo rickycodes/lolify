@@ -7,6 +7,6 @@ const lolify = module.exports = function (str) {
 
   return [].map.call(str, function (l) {
     const index = vowels.indexOf(l)
-    return (index >= 0) ? rvowels[ index ] : l
+    return (index !== -1) ? rvowels[ index ] : l
   }).join('')
 }

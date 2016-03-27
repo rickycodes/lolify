@@ -17,13 +17,11 @@ const cli = meow({
 })
 
 function output (str) {
-  console.log(str)
+  process.stdout.write(str)
   process.exit()
 }
 
-if (arg) {
-  output(lolify(arg))
-}
+if (arg) output(lolify(arg))
 
 process.stdin.on('data', function (data) {
   output(lolify(data))
