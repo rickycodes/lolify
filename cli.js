@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
-const lolify = require('./')()
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
+
+const arg = process.argv[2]
+const lolify = require('./')
 const meow = require('meow')
 
 const cli = meow({
@@ -12,4 +16,15 @@ const cli = meow({
   ].join('\n')
 })
 
-console.log(lolify)
+function output (str) {
+  console.log(str)
+  process.exit()
+}
+
+if (arg) {
+  output(lolify(arg))
+}
+
+process.stdin.on('data', function (data) {
+  output(lolify(data))
+})
