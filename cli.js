@@ -20,7 +20,7 @@ const cli = meow({
 })
 
 function output (str) {
-  process.stdout.write(str)
+  process.stdout.write(str + '\n')
   process.exit()
 }
 
