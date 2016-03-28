@@ -12,7 +12,10 @@ const cli = meow({
   help: [
     'Usage',
     '  lolify "hello how are you?"',
-    '  => `hallo how era you?`'
+    '  => `hallo how era you?`',
+    'Or',
+    '  echo "i like cats" | lolify',
+    '  => `a lake cits`'
   ].join('\n')
 })
 
