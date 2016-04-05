@@ -1,6 +1,6 @@
 {
   "name": "lolify",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "super useful command line utility",
   "main": "index.js",
   "bin": {
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/rickycodes/lolify",
   "dependencies": {
     "meow": "^3.7.0"
-  }
+  },
+  "tonicExampleFilename": "example.js"
 }
