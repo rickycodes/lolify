@@ -1,4 +1,4 @@
-const vowels = 'aeiou'
+const vowels = 'aeiouAEIOU'
 
 const lolify = module.exports = function (str) {
   const rvowels = vowels.split('').sort(function () {
