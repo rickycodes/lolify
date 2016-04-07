@@ -1,6 +1,6 @@
 {
   "name": "lolify",
-  "version": "1.0.15",
+  "version": "1.0.19",
   "description": "super useful command line utility",
   "main": "index.js",
   "bin": {
