@@ -7,7 +7,7 @@ const arg = process.argv[2]
 const lolify = require('./')
 const meow = require('meow')
 
-const cli = meow({
+meow({
   requireInput: true,
   help: [
     'Usage',
@@ -19,13 +19,8 @@ const cli = meow({
   ].join('\n')
 })
 
-function output (str) {
-  process.stdout.write(str + '\n')
-  process.exit()
-}
+const output = (str) => process.stdout.write(str + '\n') && process.exit()
 
 if (arg) output(lolify(arg))
 
-process.stdin.on('data', function (data) {
-  output(lolify(data))
-})
+process.stdin.on('data', (data) => output(lolify(data)))
