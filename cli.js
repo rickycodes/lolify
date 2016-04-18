@@ -3,11 +3,7 @@
 process.stdin.resume()
 process.stdin.setEncoding('utf8')
 
-const arg = process.argv[2]
-const lolify = require('./')
-const meow = require('meow')
-
-meow({
+require('meow')({
   requireInput: true,
   help: [
     'Usage',
@@ -19,6 +15,8 @@ meow({
   ].join('\n')
 })
 
+const arg = process.argv[2]
+const lolify = require('./')
 const output = (str) => process.stdout.write(str + '\n') && process.exit()
 
 if (arg) output(lolify(arg))
