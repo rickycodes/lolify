@@ -1,5 +1,7 @@
 ## super useful command line utility
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rickycodes/lolify.svg)](https://greenkeeper.io/)
+
 ### install:
 `npm i -g lolify`
 
